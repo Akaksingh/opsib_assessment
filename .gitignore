@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Local databases (SQLite dev/test artifacts)
+*.db
+opsib*.db
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Assessment prompt materials (not part of the submitted codebase)
+OPSiB_Backend_Engineering_Assessment.pdf
+OPSiB_Backend_Assessment_Fixtures.zip
+
+# Keep: fixtures/, migrations/, openapi.json

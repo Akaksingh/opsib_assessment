@@ -1,0 +1,13 @@
+[project]
+name = "opsib-backend-slice"
+version = "0.1.0"
+description = "OPSiB backend slice: retail data integration, exception detection and task reliability"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = [
+    # FastAPI's on_event is deprecated in favour of lifespan; harmless for this slice.
+    "ignore::DeprecationWarning",
+]
